@@ -147,13 +147,17 @@ body {
     padding-bottom: 50px;
     display: flex;
     justify-content: space-between;
+    margin: -27px;
 }
 .card  {
+    flex: 50%;
+    gap: 54px;
+    margin: 27px; /* Добавляем отступы со всех сторон от карточек (в т.ч и с внешней, но эту проблему решает margin: -27px; в родительском блоке promo) */
     position: relative;
     border-radius: 20px;
     overflow: hidden;
     padding: 32px;
-    width: 570px;
+    max-width: 570px;
     min-height: 380px;
     display: flex;
     flex-direction: column;
