@@ -376,6 +376,7 @@ body {
     color: #AAAAB1;
 }
 .button-outline {
+    cursor: pointer;
     padding: 15px 25px;
     font-weight: 500;
     font-size: 16px;
@@ -385,4 +386,11 @@ body {
     border: 2px solid #F37321;
     border-radius: 33px;
     box-sizing: border-box;
+}
+.button-center {
+    display: block;
+    margin: 61px auto 0;
+    padding-left: 105px;
+    padding-right: 105px;
+
 }
