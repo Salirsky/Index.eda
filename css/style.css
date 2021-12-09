@@ -309,14 +309,11 @@ body {
     margin-top: 50px;
     margin-bottom: 62px;
     padding-left: 0;
-
 }
 .tabs-item {
     list-style-type: none;
     margin-right: 58px;
- 
 }
-
 .tabs-link {
     margin: 0;
     text-decoration:none;
@@ -325,8 +322,12 @@ body {
     line-height: 23px;
     color: #49494F; 
 }
-.tabs-link:active .active {
+.active  {
     color: #F37321;
+}
+.tabs-content {
+    display: flex;
+    justify-content: space-between;
 }
 .tabs-card {
     max-width: 270px;
@@ -374,7 +375,6 @@ body {
     line-height: 20px;
     color: #AAAAB1;
 }
-
 .button-outline {
     padding: 15px 25px;
     font-weight: 500;
@@ -382,7 +382,7 @@ body {
     line-height: 19px;
     color: #F37321;
     background-color: transparent;
-    border-color: #F37321;
+    border: 2px solid #F37321;
     border-radius: 33px;
     box-sizing: border-box;
 }
