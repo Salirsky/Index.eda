@@ -392,5 +392,32 @@ body {
     margin: 61px auto 0;
     padding-left: 105px;
     padding-right: 105px;
-
+}
+.footer {
+    padding: 40px 0;
+    background-color: #F6F6F6;
+}
+.footer-wrapper {
+    display: flex;
+    align-items: center;
+}
+.footer-logo {
+    margin-right: 50px;
+}
+.footer-link {
+    margin-right: 50px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    text-decoration-line: underline;
+    color: #000000;
+}
+.social-links {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.social-link {
+    margin-left: 20px;
+    text-decoration: none;
 }
