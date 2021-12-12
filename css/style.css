@@ -328,13 +328,22 @@ body {
 .tabs-content {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin: -18px;
+
+    
 }
 .tabs-card {
+    width: 270px;
     max-width: 270px;
     border-radius: 20px;
     overflow: hidden;
     background-color: #fff;
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+    margin: 18px;
+}
+.tabs-card:last-child {
+    /* margin-right: 0; */
 }
 .tabs-image {
     max-width: 100%;
