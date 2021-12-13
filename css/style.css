@@ -329,9 +329,7 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: -18px;
-
-    
+    margin: -17px;
 }
 .tabs-card {
     width: 270px;
@@ -340,11 +338,11 @@ body {
     overflow: hidden;
     background-color: #fff;
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
-    margin: 18px;
+    margin: 17px;
 }
-.tabs-card:last-child {
-    /* margin-right: 0; */
-}
+/* .tabs-card:last-child {
+    margin-right: 0;
+} */
 .tabs-image {
     max-width: 100%;
 }
@@ -440,10 +438,13 @@ body {
     font-size: 32px;
     line-height: 23px;
     color: #000000;
+    margin-bottom: 52px;
 }
 .advantages-wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin: -17px;
 }
 .advantage-card {
     display: flex;
@@ -456,7 +457,8 @@ body {
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
     padding: 30px 23px 25px 23px;
     text-align: center;
-    margin-top: 52px;
+    margin: 17px;
+
 }
 
 
