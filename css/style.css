@@ -356,7 +356,7 @@ body {
 .tabs-content {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     margin: -17px;
 }
 .tabs-card {
@@ -471,7 +471,7 @@ body {
 .advantages-wrapper {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     margin: -17px;
 }
 .advantage-card {
@@ -487,8 +487,24 @@ body {
     text-align: center;
     margin: 17px;
 }
-@media (max-width: 680px) {
-
+@media (max-width: 1260px) {
+    .container {
+        max-width: 960px;
+    }
+   .search-form {
+       margin-left: 40px;
+       margin-right: 40px;
+   }
+   .tabs-content {
+       flex-wrap: wrap;
+   }
+   .tabs-card {
+       flex: 50%;
+       max-width: calc(50% - 35px);
+   }
+   .advantages-wrapper {
+    flex-wrap: wrap;
+   }
 }
 
 
