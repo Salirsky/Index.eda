@@ -507,5 +507,18 @@ body {
    }
 }
 
+@media (max-width: 990px) {
+    .container {
+        max-width: 760px;
+    }
+    .slide {
+        padding: 70px;
+    }
+    .delivery-card {
+        width: calc(50% - 35px);
+    }
+
+}
+
 
 
