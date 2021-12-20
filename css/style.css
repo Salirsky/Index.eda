@@ -550,21 +550,25 @@ body {
     .container {
         max-width: 90%;
     }
-    .header {
-        flex-wrap: wrap;
+    .tabs-card {
+        max-width: 100%;
     }
-    .search-form {
-        order: 5;
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        width: 100%;
+    .advantage-card {
+        max-width: 100%;
     }
-    .promo {
+    .footer-wrapper {
         flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .footer-nav {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-link {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .social-links {
+        margin: 20px auto;
     }
 }
-
-
-
