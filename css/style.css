@@ -424,6 +424,12 @@ body {
     border: 2px solid #F37321;
     border-radius: 33px;
     box-sizing: border-box;
+    transition: .3s ease all;
+}
+.button-outline:hover {
+    color: #FFF;
+    background-color: #F37321;
+    transition: .3s ease all;
 }
 .button-center {
     display: block;
