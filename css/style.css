@@ -55,6 +55,13 @@ body {
     color: #000000;
     text-decoration: none;
     display: block;
+    transition: .2s ease all;
+}
+.login:hover, .login:active {
+    transition: .2s ease all;
+    color: #FFF;
+    background: #F47322;
+    font-weight: 600;
 }
 .chopping-cart {
     position: relative;
@@ -67,6 +74,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-left: 30px;
+    transition: .2s ease all;
 }
 .shopping-counter {
     background-color: #FFAF19;
@@ -80,6 +88,16 @@ body {
     Right: 0;
     bottom: 0;
 }
+.chopping-cart:hover, .chopping-cart:active {
+    background-color: #FFAF19;
+    transition: .2s ease all;
+}
+.chopping-cart:hover .shopping-counter {
+    background-color: #F66A15;
+    color: #FFF;
+    transition: .2s ease all;
+}
+
 .slide {
     position: relative;
     border-radius: 20px;
@@ -129,10 +147,24 @@ body {
 .button-primary {
     background: #F47322;
     color: #fff;
+    transition: .3s ease all;
+}
+.button-primary:hover, .button-primary:active {
+    background: #FFAF19;
+    color: #fff;
+    font-weight: 500;
+    transition: .3s ease all;
 }
 .button-default {
     background-color: #fff;
     color: #5F5F61;
+    transition: .3s ease all;
+}
+.button-default:hover, .button-default:active {
+    background-color: #FFAF19;
+    font-weight: 500;
+    color: #fff;
+    transition: .3s ease all;
 }
 .button {
     border-radius: 25px;
@@ -455,6 +487,11 @@ body {
     line-height: 23px;
     text-decoration-line: underline;
     color: #000000;
+    transition: .3s ease all;
+}
+.footer-link:hover, .footer-link:active {
+    color: #F37321;
+    transition: .3s ease all;
 }
 .social-links {
     display: flex;
