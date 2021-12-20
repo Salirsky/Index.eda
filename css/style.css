@@ -102,7 +102,7 @@ body {
     position: relative;
     border-radius: 20px;
     overflow: hidden;
-    min-height: 400px;
+    max-height: 400px;
     display: flex;
     align-items: center;
     padding: 100px;
@@ -180,16 +180,19 @@ body {
     background-image: url('../img/summer.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: right center;
 }
 .slide-autumn {
     background-image: url('../img/autumn.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: right center;
 }
 .slide-vitamins {
     background-image: url('../img/vitamins.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: right center;
 }
 
 .slide::before {
