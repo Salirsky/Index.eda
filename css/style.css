@@ -535,7 +535,18 @@ body {
     padding: 30px 23px 25px 23px;
     text-align: center;
     margin: 17px;
+    transition: .3s ease all;
 }
+.advantage-card:hover {
+    background-color: #F37321;
+    color: #fff;
+    transition: .3s ease all;
+}
+.advantage-card:hover .advantage-icon{
+    fill: #FFF;
+    stroke: #FFF;
+}
+
 @media (max-width: 1260px) {
     .container {
         max-width: 960px;
