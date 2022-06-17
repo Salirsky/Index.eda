@@ -5,7 +5,9 @@
 body {
   font-family: Roboto;
 }
-
+.hidden {
+  display: none;
+}
 .container {
   max-width: 1196px;
   margin: auto;
@@ -394,15 +396,23 @@ transition: 0.4s ease all;
 .tabs-item:last-child {
   margin-right: 0;
 }
-.tabs-link {
+.menu-item_btn {
   margin: 0;
   text-decoration: none;
   font-weight: normal;
   font-size: 20px;
   line-height: 23px;
   color: #49494f;
+  background-color: transparent;
+  border: 0;
+  transition: 0.3s ease all;
 }
-.active {
+.menu-item_btn:hover {
+  color: #f37321;
+  transition: 0.3s ease all;
+  cursor: pointer;
+}
+.menu-item_btn_active {
   color: #f37321;
 }
 .tabs-content {
@@ -682,3 +692,4 @@ transition: 0.4s ease all;
       bottom: 27px;
   }
 }
+
