@@ -31,6 +31,8 @@ body {
   border: none;
   width: 100%;
   padding: 13px 20px;
+  outline: none;
+  /* outline-color: #f47322; */
 }
 .search-button {
   background-color: transparent;
