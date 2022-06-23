@@ -5,9 +5,6 @@
 body {
   font-family: Roboto;
 }
-.hidden {
-  display: none;
-}
 .container {
   max-width: 1196px;
   margin: auto;
@@ -431,12 +428,10 @@ transition: 0.4s ease all;
   background-color: #fff;
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
   margin: 17px;
-}
-/* .tabs-card:last-child {
-    margin-right: 0;
-} */
+  }
 .tabs-image {
   max-width: 100%;
+  height: 192px;
 }
 .tabs-card-content {
   padding: 23px;
@@ -695,3 +690,6 @@ transition: 0.4s ease all;
   }
 }
 
+.hidden {
+  display: none;
+}
