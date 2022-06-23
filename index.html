@@ -10,8 +10,9 @@
   rel="stylesheet"  href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer></script>
-    <script src="js/main.js" defer></script>
     <script src="js/tabs.js" defer ></script>
+    <script src="js/main.js" defer></script>
+
 </head>
 <body>
    <header class="header container">
@@ -210,20 +211,20 @@
                 <h2 class="categories">Категории блюд</h2>
                 <ul class="tabs">
                     <li class="tabs-item ">
-                        <button class="menu-item_btn menu-item_btn_active">Популярные блюда</button>
+                        <button data-tabs-handler="popular" id="item_popular" class="menu-item_btn menu-item_btn_active">Популярные блюда</button>
                         <!-- <a href="#" class="tabs-link active">Популярные блюда</a> -->
                     </li>
                     <li class="tabs-item">
-                        <button class="menu-item_btn">Овощное</button>
+                        <button data-tabs-handler="veg" id="item_veg"  class="menu-item_btn">Овощное</button>
                         <!-- <a href="#" class="tabs-link">Овощное</a> -->
                     </li>
                     <li class="tabs-item">
-                        <button class="menu-item_btn">Мясное</button>
+                        <button data-tabs-handler="meet" id="item_meet" class="menu-item_btn">Мясное</button>
                         <!-- <a href="#" class="tabs-link">Мясное</a> -->
                     </li>
                 </ul>
                 <!-- /.tabs -->
-                <div class="tabs-content">
+                <section data-tabs-field="popular" class="popular container tabs-content menu-content" id="popular">
                     <div class="tabs-card">
                         <img src="img/tabs-image.png" alt="" class="tabs-image">
                         <div class="tabs-card-content">
@@ -296,7 +297,157 @@
                         </div>
                     </div>
                     <!-- /.tabs-card -->
-                </div>
+                </section>
+                <!-- /.tabs-content -->
+                <section data-tabs-field="veg" class="hidden veg container tabs-content menu-content" id="veg">
+                    <div class="tabs-card">
+                        <img src="img/tabs-image-veg.jpg" alt="" class="tabs-image">
+                        <div class="tabs-card-content">
+                            <h3 class="tabs-title">Куриные крылья под
+                                соусом Терияки</h3>
+                            <p class="tabs-description">Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...</p>
+                            <div class="tabs-info">
+                                <div class="tabs-good">
+                                    <span class="tabs-price">260 ₽</span>
+                                    <span class="tabs-weight">500 гр</span>
+                                </div>
+                                <!-- /.tabs-good -->
+                                <button class="button button-outline">В корзину</button>
+                            </div>
+                            <!-- /.tabs-info -->
+                        </div>
+                    </div>
+                    <!-- /.tabs-card -->
+                    <div class="tabs-card">
+                        <img src="img/tabs-image-veg.jpg" alt="" class="tabs-image">
+                        <div class="tabs-card-content">
+                            <h3 class="tabs-title">Куриные крылья под
+                                соусом Терияки</h3>
+                            <p class="tabs-description">Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...</p>
+                            <div class="tabs-info">
+                                <div class="tabs-good">
+                                    <span class="tabs-price">260 ₽</span>
+                                    <span class="tabs-weight">500 гр</span>
+                                </div>
+                                <!-- /.tabs-good -->
+                                <button class="button button-outline">В корзину</button>
+                            </div>
+                            <!-- /.tabs-info -->
+                        </div>
+                    </div>
+                    <!-- /.tabs-card -->
+                    <div class="tabs-card">
+                        <img src="img/tabs-image-veg.jpg" alt="" class="tabs-image">
+                        <div class="tabs-card-content">
+                            <h3 class="tabs-title">Куриные крылья под
+                                соусом Терияки</h3>
+                            <p class="tabs-description">Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...</p>
+                            <div class="tabs-info">
+                                <div class="tabs-good">
+                                    <span class="tabs-price">260 ₽</span>
+                                    <span class="tabs-weight">500 гр</span>
+                                </div>
+                                <!-- /.tabs-good -->
+                                <button class="button button-outline">В корзину</button>
+                            </div>
+                            <!-- /.tabs-info -->
+                        </div>
+                    </div>
+                    <!-- /.tabs-card -->
+                    <div class="tabs-card">
+                        <img src="img/tabs-image-veg.jpg" alt="" class="tabs-image">
+                        <div class="tabs-card-content">
+                            <h3 class="tabs-title">Куриные крылья под
+                                соусом Терияки</h3>
+                            <p class="tabs-description">Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...</p>
+                            <div class="tabs-info">
+                                <div class="tabs-good">
+                                    <span class="tabs-price">260 ₽</span>
+                                    <span class="tabs-weight">500 гр</span>
+                                </div>
+                                <!-- /.tabs-good -->
+                                <button class="button button-outline">В корзину</button>
+                            </div>
+                            <!-- /.tabs-info -->
+                        </div>
+                    </div>
+                    <!-- /.tabs-card -->
+                </section>
+                <!-- /.tabs-content -->
+                <section data-tabs-field="meet" class="hidden meet container tabs-content menu-content" id="meet">
+                    <div class="tabs-card">
+                        <img src="img/tabs-image-meet.jpg" alt="" class="tabs-image">
+                        <div class="tabs-card-content">
+                            <h3 class="tabs-title">Куриные крылья под
+                                соусом Терияки</h3>
+                            <p class="tabs-description">Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...</p>
+                            <div class="tabs-info">
+                                <div class="tabs-good">
+                                    <span class="tabs-price">260 ₽</span>
+                                    <span class="tabs-weight">500 гр</span>
+                                </div>
+                                <!-- /.tabs-good -->
+                                <button class="button button-outline">В корзину</button>
+                            </div>
+                            <!-- /.tabs-info -->
+                        </div>
+                    </div>
+                    <!-- /.tabs-card -->
+                    <div class="tabs-card">
+                        <img src="img/tabs-image-meet.jpg" alt="" class="tabs-image">
+                        <div class="tabs-card-content">
+                            <h3 class="tabs-title">Куриные крылья под
+                                соусом Терияки</h3>
+                            <p class="tabs-description">Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...</p>
+                            <div class="tabs-info">
+                                <div class="tabs-good">
+                                    <span class="tabs-price">260 ₽</span>
+                                    <span class="tabs-weight">500 гр</span>
+                                </div>
+                                <!-- /.tabs-good -->
+                                <button class="button button-outline">В корзину</button>
+                            </div>
+                            <!-- /.tabs-info -->
+                        </div>
+                    </div>
+                    <!-- /.tabs-card -->
+                    <div class="tabs-card">
+                        <img src="img/tabs-image-meet.jpg" alt="" class="tabs-image">
+                        <div class="tabs-card-content">
+                            <h3 class="tabs-title">Куриные крылья под
+                                соусом Терияки</h3>
+                            <p class="tabs-description">Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...</p>
+                            <div class="tabs-info">
+                                <div class="tabs-good">
+                                    <span class="tabs-price">260 ₽</span>
+                                    <span class="tabs-weight">500 гр</span>
+                                </div>
+                                <!-- /.tabs-good -->
+                                <button class="button button-outline">В корзину</button>
+                            </div>
+                            <!-- /.tabs-info -->
+                        </div>
+                    </div>
+                    <!-- /.tabs-card -->
+                    <div class="tabs-card">
+                        <img src="img/tabs-image-meet.jpg" alt="" class="tabs-image">
+                        <div class="tabs-card-content">
+                            <h3 class="tabs-title">Куриные крылья под
+                                соусом Терияки</h3>
+                            <p class="tabs-description">Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...</p>
+                            <div class="tabs-info">
+                                <div class="tabs-good">
+                                    <span class="tabs-price">260 ₽</span>
+                                    <span class="tabs-weight">500 гр</span>
+                                </div>
+                                <!-- /.tabs-good -->
+                                <button class="button button-outline">В корзину</button>
+                            </div>
+                            <!-- /.tabs-info -->
+                        </div>
+                    </div>
+                    <!-- /.tabs-card -->
+                </section>
                 <!-- /.tabs-content -->
                 <button class="button button-outline button-center">Больше блюд</button>
             </div>
